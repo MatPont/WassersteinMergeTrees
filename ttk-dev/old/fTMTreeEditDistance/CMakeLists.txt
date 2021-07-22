@@ -1,0 +1,21 @@
+ttk_add_base_library(fTMTreeEditDistance
+  SOURCES
+    FTMTreeEditDistance.cpp
+    FTMTreePPCompute.cpp
+    FTMTreeUtils.cpp
+  HEADERS
+    FTMTreeEditDistance.h
+    FTMTreeEditDistanceBase.h
+    FTMTreeEditDistanceProgressive.h
+    FTMTreePPCompute.h
+    FTMTreeUtils.h
+    FTMTreeEditDistanceBarycenter.h
+    FTMTreeEditDistanceClustering.h
+    AssignmentExhaustive.h
+    AssignmentAuction.h
+  LINK
+    ftmTree
+    bottleneckDistance
+    auction
+    triangulation
+    )

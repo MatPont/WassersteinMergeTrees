@@ -1,0 +1,16 @@
+NAME
+  ttkMergeTreeClustering
+SOURCES
+  ttkMergeTreeClustering.cpp
+  ttkMergeTreeUtilsVisu.cpp
+HEADERS
+  ttkMergeTreeClustering.h
+  ttkMergeTreeUtils.h
+  ttkMergeTreeUtilsVisu.h
+  ttkMergeTreeVisu.h
+DEPENDS
+  mergeTreeClustering
+  ftmTree
+  planarGraphLayout
+  ttkAlgorithm
+  ttkTriangulationAlgorithm

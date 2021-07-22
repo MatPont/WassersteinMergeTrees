@@ -1,0 +1,24 @@
+ttk_add_base_library(mergeTreeClustering
+  SOURCES
+    MergeTreeDistance.cpp
+    FTMTreePPCompute.cpp
+    MergeTreeUtils.cpp
+  HEADERS
+    MergeTreeDistance.h
+    MergeTreeBase.h
+    MergeTreeDistanceProgressive.h
+    FTMTreePPCompute.h
+    MergeTreeUtils.h
+    MergeTreeBarycenter.h
+    MergeTreeClustering.h
+    MergeTreeTemporalSubsampling.h
+    AssignmentExhaustive.h
+    AssignmentAuction.h
+  LINK
+    ftmTree
+    bottleneckDistance
+    auction
+    lDistance
+    triangulation
+    ttkAlgorithm
+    )

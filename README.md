@@ -1,1 +1,78 @@
-# WassersteinMergeTrees
+# Merge-Tree-Clustering-Paraview
+
+Tested on Ubuntu 18.04.5 LTS.
+
+## Install the dependencies
+
+```bash
+sudo apt-get install cmake-qt-gui libboost-system-dev libpython3.6-dev libxt-dev
+sudo apt-get install qt5-default qttools5-dev libqt5x11extras5-dev libqt5svg5-dev qtxmlpatterns5-dev-tools 
+sudo apt-get install python3-sklearn 
+```
+
+## Install Paraview
+
+Extract ParaView:
+
+```bash
+tar xvJf ParaView-v5.7.0.tar.xz
+```
+
+Patch ParaView with TTK:
+
+```bash
+cd ttk-dev/paraview/patch
+chmod u+x patch-paraview-5.7.0.sh
+./patch-paraview-5.7.0.sh ../../../ParaView-v5.7.0/
+```
+
+Install ParaView:
+(replace the 4 in "make -j4" by the number of available cores on your system)
+
+```bash
+cd ../../../ParaView-v5.7.0/
+mkdir build && cd build
+cmake -DCMAKE_BUILD_TYPE=Release -DPARAVIEW_USE_PYTHON=ON -DPARAVIEW_INSTALL_DEVELOPMENT_FILES=ON -DPARAVIEW_PYTHON_VERSION=3 -DCMAKE_INSTALL_PREFIX=../install ..
+make -j4
+make install
+```
+
+## Install TTK
+
+(replace the 4 in "make -j4" by the number of available cores on your system)
+
+```bash
+cd ttk-dev/
+mkdir build && cd build
+paraviewPath=`pwd`/../../ParaView-v5.7.0/install/lib/cmake/paraview-5.7
+cmake -DCMAKE_INSTALL_PREFIX=../install -DParaView_DIR=$paraviewPath ..
+make -j4
+make install
+```
+
+## Get the results
+
+Extract the data:
+
+```bash
+tar xvJf data.tar.xz
+```
+
+### table 1
+
+To reproduce the results of Table 1 in the paper, please enter the following commands:
+
+```bash
+cd scripts
+for f in *.sh; do chmod u+x $f; done
+```
+
+Run the experiments (it will take a LONG time) and print table:
+(replace N with the number of available cores on your system)
+
+```bash
+./automata5.sh N
+./table1.sh
+```
+
+The barycenters computed during the benchmarks were saved in the `outputs` folder, using a default planar layout.
