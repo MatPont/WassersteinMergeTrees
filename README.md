@@ -1,6 +1,17 @@
-# Merge-Tree-Clustering-Paraview
+# Wasserstein Merge Trees
 
-Tested on Ubuntu 18.04.5 LTS.
+## Reference
+
+If you plan to use this code to generate results for a scientific document, thanks for referencing the following publication:
+
+"Wasserstein Distances, Geodesics and Barycenters of Merge Trees"  
+Mathieu Pont, Jules Vidal, Julie Delon, Julien Tierny.  
+Proc. of IEEE VIS 2021.  
+IEEE Transactions on Visualization and Computer Graphics, 2021  
+
+## Installation note
+
+The following procedure has been tested on Ubuntu 18.04.5 LTS.
 
 ## Install the dependencies
 
