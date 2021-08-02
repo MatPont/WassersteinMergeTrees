@@ -108,7 +108,7 @@ You can also do the computation for one dataset at a time with:
 And finally the dataset ordered by size (number of members * number of persistence pairs):
 - Vortex Street (45 * 23)
 - Starting Vortex (12 * 124)
-- Viscous fingering/Particular Ensemble (15 * 118)
+- Viscous fingering (15 * 118)
 - Ionization front 2D (16 * 135)
 - Volcanic eruptions (12 * 811)
 - Ionization front 3D (16 * 763)
