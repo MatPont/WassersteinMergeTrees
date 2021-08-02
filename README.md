@@ -76,3 +76,34 @@ Run the experiments (it will take a LONG time) and print table:
 ```
 
 The barycenters computed during the benchmarks were saved in the `outputs` folder, using a default planar layout.
+
+You can also do the computation for one dataset at a time with:
+
+```
+./runVortexStreet.sh N
+./runStartingVortex.sh N
+./runParticularEnsemble.sh N
+./runIonizationFront2D.sh N
+./runVolcanicEruptions.sh N
+./runIonizationFront3D.sh N
+./runAsteroidImpact.sh N
+./runEarthquake.sh N
+./runCloudProcesses.sh N
+./runIsabel.sh N
+./runDarkMatter.sh N
+./runSeaSurfaceHeight.sh N
+```
+
+And finally the dataset ordered by size (number of members * number of persistence pairs):
+- Vortex Street (45 * 23)
+- Starting Vortex (12 * 124)
+- Viscous fingering/Particular Ensemble (15 * 118)
+- Ionization front 2D (16 * 135)
+- Volcanic eruptions (12 * 811)
+- Ionization front 3D (16 * 763)
+- Asteroid Impact (7 * 1295)
+- Earthquake (12 * 1203)
+- Cloud processes (12 * 1209)
+- Isabel (12 * 1338)
+- Dark matter (12 * 2592)
+- Sea Surface Height (48 * 1787)
