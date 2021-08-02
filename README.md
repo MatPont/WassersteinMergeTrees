@@ -93,7 +93,7 @@ You can also do the computation for one dataset at a time with:
 ```
 ./runVortexStreet.sh N
 ./runStartingVortex.sh N
-./runParticularEnsemble.sh N
+./runViscousFingering.sh N
 ./runIonizationFront2D.sh N
 ./runVolcanicEruptions.sh N
 ./runIonizationFront3D.sh N
