@@ -1,3 +1,3 @@
 #!/bin/bash
 
-./runner $1 9
+./runner.sh $1 9
