@@ -1,7 +1,9 @@
 # Wasserstein Merge Trees
 
 This github repository contains the exact code used for the reference below.
+
 The module has been integrated to TTK https://github.com/topology-tool-kit/ttk and has been improved since the publication of the paper.
+
 We recommend to use the module now present in TTK to enjoy the last features (for example, the new module is in average 3 times faster).
 
 ## Reference
