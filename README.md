@@ -15,6 +15,8 @@ Mathieu Pont, Jules Vidal, Julie Delon, Julien Tierny.
 Proc. of IEEE VIS 2021.  
 IEEE Transactions on Visualization and Computer Graphics, 2021  
 
+[Paper](https://arxiv.org/pdf/2107.07789.pdf)
+
 ## Installation note
 
 The following procedure has been tested on Ubuntu 18.04.5 LTS.
